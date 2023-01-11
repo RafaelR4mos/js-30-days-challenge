@@ -1,0 +1,56 @@
+:root {
+    --base: #ffc600;
+    --spacing: 0.625rem;
+    --blur: 0rem;
+}
+
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 2.25rem;
+  }
+
+  img {
+    width: 50rem;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur))
+  }
+
+  .hl {
+    color: var(--base);
+  }
+
+  .controls {
+    margin-bottom: 3.125rem;
+  }
+
+  label {
+    font-size: 1.75rem;
+  }
+
+  input {
+    width: 6.25rem;
+  }
+
+  @media(max-width:900px) {
+    html {
+        font-size: 75%;
+    }
+  }
+
+  @media(max-width:650px) {
+    html {
+        font-size: 50%;
+    }
+  }
+
+  @media(max-width:450px) {
+    html {
+        font-size: 38%;
+    }
+  }
