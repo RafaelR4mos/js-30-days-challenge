@@ -1,0 +1,130 @@
+:root {
+    --title-color: #fff;
+    --subtitle-color: #E0E0E0;
+    --container-color: #59675D;
+    --text-color: #131313;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background: no-repeat url("assets/drums-bg.png") bottom center;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 3.125rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1, kbd {
+    color: var(--title-color);
+}
+
+h2, h3 {
+    color: var(--subtitle-color);
+}
+
+span, p {
+    color: var(--text-color);
+}
+
+.key-container-title {
+    padding: 0.5rem 1rem;
+    margin: 5.25rem auto;
+    text-align: center;
+    background: var(--container-color);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.keys-container {
+    padding-top: 4rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.key {
+    border: .4rem solid var(--container-color);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .1s ease;
+    width: 9rem;
+    text-align: center;
+    background: rgba(89, 103, 93, 0.75);
+}
+
+.key > kbd {
+    display: block;
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 0 0 .25rem var(--title-color);
+}
+
+.key > span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #e4e4e4;
+    box-shadow: 0 0 1rem #e4e4e4;
+  }
+
+@media(max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+
+    body {
+        background: no-repeat url("assets/drums-bg-mobile.png");
+        background-size: cover;
+        padding: 0 12px;
+    }
+
+    .keys-container {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, 100px);
+        justify-items: center;
+        align-content: center;
+
+
+    }
+
+    .key {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
