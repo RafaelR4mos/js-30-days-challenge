@@ -5,4 +5,5 @@ Desafio 30 dias de Java script com 30 projetos diferentes
 <ol>
   <li> <a href="https://01-drums-player.vercel.app/" target="_blank"> Drums Player </a> 
   <li> <a href="https://02-jsclock.vercel.app/" target="_blank"> JSCLock </a> 
+  <li> <a href="https://3-css-variables-taupe.vercel.app/" target="_blank"> CSS Varibles </a> 
 </ol>
